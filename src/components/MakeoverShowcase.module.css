@@ -1,0 +1,170 @@
+.section {
+  padding: 56px 0 72px;
+}
+
+.title {
+  font-size: clamp(1.1rem, 0.9rem + 1vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+
+.tabBtn {
+  position: relative;
+  background: transparent;
+  border: 0;
+  padding: 8px 0;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #9a9a9a;
+  cursor: pointer;
+}
+
+.tabBtn.active {
+  color: #2d2d2d;
+}
+
+.tabBtn.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 44px;
+  background: #b59c63; /* soft gold underline */
+  margin-top: 6px;
+}
+
+/* Slider card */
+.swiper :global(.swiper-pagination-bullets) {
+  bottom: -30px;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+  width: 8px;
+  height: 8px;
+  background: #c7c7c7;
+  opacity: 1;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+  background: #9f8656;
+}
+
+/* image card with rounded corners */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+}
+
+.card > img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+/* External nav buttons */
+.navBtn {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.navBtn svg {
+  width: 26px;
+  height: 26px;
+  color: #222;
+}
+
+.prev {
+  left: 0px;
+}
+.next {
+  right: 0px;
+}
+
+@media (max-width: 992px) {
+  .prev {
+    left: 6px;
+  }
+  .next {
+    right: 6px;
+  }
+}
+
+/* Right column */
+.sideTitle {
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 6px;
+}
+
+.text {
+  color: #4a4f53;
+  margin: 0;
+}
+
+.meta {
+  color: #6c7276;
+  margin-top: 6px;
+}
+
+.star {
+  color: #b59c63;
+  margin-right: 6px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #6f613e;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 576px) {
+  .card > img {
+    height: 340px;
+  }
+  .navBtn {
+    width: 48px;
+    height: 48px;
+  }
+  .navBtn svg {
+    width: 22px;
+    height: 22px;
+  }
+}

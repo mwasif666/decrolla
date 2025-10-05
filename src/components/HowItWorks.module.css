@@ -1,0 +1,90 @@
+.section {
+  padding: 64px 0;
+}
+
+.title {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Image container with rounded corners + shadow */
+.mediaWrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+  /* keep the same wide feel as screenshot */
+  aspect-ratio: 16 / 9;
+}
+
+/* for older browsers without aspect-ratio */
+@supports not (aspect-ratio: 16 / 9) {
+  .mediaWrapper::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  .mediaWrapper > img,
+  .mediaWrapper > button {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Circular white play button centered */
+.playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 104px;
+  height: 104px;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.playBtn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+  background: #ffffff;
+}
+
+/* Triangle icon inside button */
+.playTriangle {
+  width: 0;
+  height: 0;
+  border-left: 28px solid #1b1b1b;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  margin-left: 6px;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 40px 0;
+  }
+  .playBtn {
+    width: 80px;
+    height: 80px;
+  }
+  .playTriangle {
+    border-left-width: 22px;
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+  }
+}

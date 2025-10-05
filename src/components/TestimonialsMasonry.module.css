@@ -1,0 +1,72 @@
+.wrapimage {
+  position: relative;
+  padding: 80px 120px;
+  background: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1800&auto=format&fit=crop")
+    center/cover no-repeat;
+}
+.wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.wrap > .container {
+  position: relative; /* keep content above overlay */
+}
+
+.title {
+  font-weight: 600;
+  font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2.3rem);
+  color: #2b2b2b;
+  margin-bottom: 6px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b6f72;
+  margin-bottom: 22px;
+}
+
+.link {
+  color: #6f613e;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+  padding: 26px 26px 22px;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #273036;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 0.8rem;
+}
+.author {
+  display: flex;
+  align-items: center;
+}
+.author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.name {
+  font-size: 0.8rem;
+}
+.role {
+  font-size: 0.75rem;
+  color: #6b6f72;
+}

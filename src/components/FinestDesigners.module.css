@@ -1,0 +1,51 @@
+.section {
+  padding: 72px 0;
+}
+
+.title {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.25rem);
+  color: #2c2c2c;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #6b6f72;
+  margin: 0 0 24px;
+}
+
+/* Icon circle */
+.iconWrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  /* subtle soft gold tone similar to screenshot */
+  color: #b59c63; /* icon color */
+  background: rgba(181, 156, 99, 0.1);
+  border: 1px solid rgba(181, 156, 99, 0.25);
+  font-size: 30px; /* icon size */
+}
+
+.featureText {
+  margin-top: 14px;
+  color: #2f3437;
+  line-height: 1.35;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 56px 0;
+  }
+  .iconWrap {
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+  }
+  .featureText {
+    font-size: 0.98rem;
+  }
+}

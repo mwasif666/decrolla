@@ -1,0 +1,52 @@
+/* light canvas like screenshot */
+.wrap {
+  background: #f7f7f7;
+  padding: 56px 0;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.quote {
+  margin: 0 0 16px;
+  font-size: clamp(1.05rem, 0.9rem + 0.8vw, 1.35rem);
+  line-height: 1.6;
+  color: #1f2a32;
+  font-weight: 450;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dash {
+  font-size: 1.6rem;
+  color: #7a7f83;
+  line-height: 1;
+}
+
+.author {
+  font-size: clamp(1.3rem, 1rem + 1.2vw, 2rem);
+  color: #222;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: lowercase; /* screenshot style */
+}
+
+/* responsive tweaks */
+@media (max-width: 576px) {
+  .wrap {
+    padding: 40px 0;
+  }
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
