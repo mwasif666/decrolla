@@ -14,6 +14,7 @@ import ProjectsShow from "@/pages/projects/ProjectDetails.jsx";
 import Blog from "@/pages/blog/BlogIndex.jsx";
 import BlogShow from "@/pages/blog/BlogDetails.jsx";
 import Company from "./pages/Company";
+import ReviewsSection from "./pages/Reviews";
 
 export default function AppRoutes() {
   return (
@@ -28,6 +29,7 @@ export default function AppRoutes() {
         <Route path="services" element={<Services />} />
         <Route path="price" element={<Price />} />
         <Route path="team" element={<Team />} />
+        <Route path="reviews" element={<ReviewsSection />} />
         <Route path="projects" element={<Projects />} />
         <Route path="company" element={<Company />} />
         <Route path="projects/:slug" element={<ProjectsShow />} />
