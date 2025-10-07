@@ -1,0 +1,89 @@
+/* Footer.module.css */
+.footer-area {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer-up {
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #ff7f50;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  color: #ff7f50;
+}
+
+.email-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+.email-input::placeholder {
+  color: #999;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #ff7f50;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom .footer-links a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-bottom .footer-links a:hover {
+  color: white;
+}
